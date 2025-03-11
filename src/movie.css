@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  font-family: "Poppins", sans-serif;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1b2a49;
+}
+
+.header .logo h1 {
+  font-size: 30px;
+  color: rgb(209, 197, 178);
+  cursor: pointer;
+}
+
+.header .input-field {
+  display: flex;
+}
+
+.header .input-field input {
+  padding: 8px 25px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  border-radius: 17px;
+  width: 23vw;
+  height: 5vh;
+}
+
+.input-field .search-icon {
+  font-size: 16px;
+  position: absolute;
+  margin-top: 7.3px;
+  margin-left: 6px;
+}
+
+.input-field .btn {
+  background: #007bff;
+  color: white;
+  padding: 5px 11px;
+  font-size: 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  position: absolute;
+  right: 65px;
+  margin-top: 4px;
+}
+
+.input-field .btn:hover {
+  background: #08085f;
+}
+
+.input-field input:hover,
+.input-field input:focus-within {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.5);
+}
+
+/* Movie Section */
+.movie {
+  padding: 30px 5%;
+  background-color: rgb(245, 240, 240);
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.movie h3 {
+  font-size: 24px;
+  color: rgb(29, 36, 99);
+  margin-bottom: 20px;
+}
+
+/* Movie Grid */
+.movie .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Movie Box */
+.movie .container .box {
+  width: 100%;
+  max-width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.movie .container .box:hover {
+  transform: scale(1.05);
+}
+
+/* Movie Poster */
+.movie .container .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.movie .container .box:hover img {
+  opacity: 0.7;
+}
+
+/* Movie Details */
+.movie .container .box .detail {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie .container .box:hover .detail {
+  transform: translateY(-10px);
+}
+
+.movie .container .box .detail h4 {
+  font-size: 16px;
+}
+
+/* new  */
+
+.error-message {
+  color: rgb(247, 12, 12);
+  background: #ffe5e5;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  max-width: 300px;
+  margin: 10px auto;
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 15px;
+  }
+
+  .header .logo h1 {
+    font-size: 20px;
+  }
+
+  .header .input-field {
+    width: 100%;
+  }
+
+  .input-field input {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .input-field .btn {
+    font-size: 11px;
+    padding: 5px 9px;
+    margin-left: 5px;
+  }
+
+  .movie h3 {
+    font-size: 20px;
+  }
+
+  .movie .container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .movie .container .box {
+    max-width: 180px;
+    height: 300px;
+  }
+
+  .error-message {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.logo h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  color: #ff4c29; /* Vibrant, fiery color */
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px #ff4c29, 0 0 10px #ff4c29;
+  }
+  50% {
+    text-shadow: 0 0 15px #ff8c52, 0 0 20px #ff8c52;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff4c29, 0 0 10px #ff4c29;
+  }
+}
+
+.logo h1 {
+  animation: glowing 2s infinite alternate;
+}
+
+.movie h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: #072b61; /* Vibrant, fiery color */
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}

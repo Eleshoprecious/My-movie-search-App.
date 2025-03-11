@@ -1,0 +1,28 @@
+.footer {
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 20px;
+  border-top: 2px solid #2a2152;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #ff5733;
+}
