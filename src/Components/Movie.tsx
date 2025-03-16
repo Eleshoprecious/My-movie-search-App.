@@ -54,7 +54,6 @@ const Movie = () => {
   };
 
   // Fetch movies automatically as user types
-
   useEffect(() => {
     if (search) fetchMovies(search);
     else fetchMovies("Hello");
@@ -80,7 +79,7 @@ const Movie = () => {
             placeholder="Search for movies..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            // onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
+            onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
             className="styled-input"
           />
           <button className="btn" onClick={handleSearchClick}>
@@ -108,7 +107,7 @@ const Movie = () => {
           ))}
         </div>
       </div>
-      <Footer />;
+      <Footer />
     </>
   );
 };
