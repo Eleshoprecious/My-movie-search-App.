@@ -104,3 +104,21 @@
 // };
 
 // export default Movie;
+/* Laptops (1280px and above) */
+// @media screen and (min-width: 1280px) {
+//     .input-field {
+//       max-width: 1140px;
+//     }
+//   }
+
+//   /* Full HD screens (1920px and above) */
+//   @media screen and (min-width: 1920px) {
+//     .input-field {
+//       max-width: 1440px;
+//     }
+//   }
+
+// sm 640
+// md 768
+// lg 1024
+// xl 1280
