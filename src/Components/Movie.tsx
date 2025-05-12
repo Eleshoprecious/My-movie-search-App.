@@ -73,7 +73,8 @@ const Movie = () => {
           <h1>Movie-Scout</h1>
         </div>
         <div className="input-field">
-          <FiSearch className="search-icon" />
+          {FiSearch({ className: "search-icon" })}
+
           <input
             type="text"
             placeholder="Search for movies..."
@@ -87,6 +88,7 @@ const Movie = () => {
           </button>
         </div>
       </div>
+      ={" "}
       <div className="movie">
         <h3>Movies</h3>
         {error && <p className="error-message">{error}</p>}
