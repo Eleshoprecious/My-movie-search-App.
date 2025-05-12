@@ -24,7 +24,7 @@ const MovieDetail = () => {
       try {
         // Fetch movie details from OMDb API
         const response = await fetch(
-          `http://www.omdbapi.com/?i=${id}&apikey=19a235cd`
+          `https://www.omdbapi.com/?i=${id}&apikey=19a235cd`
         );
         const data = await response.json();
 

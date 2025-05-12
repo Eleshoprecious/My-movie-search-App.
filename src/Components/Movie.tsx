@@ -38,6 +38,7 @@ const Movie = () => {
       const response = await fetch(
         `https://www.omdbapi.com/?s=${query}&apikey=19a235cd`
       );
+
       const data: ApiResponse = await response.json();
 
       if (data.Response === "True" && data.Search) {
