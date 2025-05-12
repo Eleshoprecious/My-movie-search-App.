@@ -36,7 +36,7 @@ const Movie = () => {
 
     try {
       const response = await fetch(
-        `http://www.omdbapi.com/?s=${query}&apikey=19a235cd`
+        `https://www.omdbapi.com/?s=${query}&apikey=19a235cd`
       );
       const data: ApiResponse = await response.json();
 
