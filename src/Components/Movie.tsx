@@ -87,8 +87,7 @@ const Movie = () => {
             Send
           </button>
         </div>
-      </div>
-      ={" "}
+      </div>{" "}
       <div className="movie">
         <h3>Movies</h3>
         {error && <p className="error-message">{error}</p>}
